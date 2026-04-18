@@ -1,0 +1,123 @@
+#Panto-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 1rem;
+  animation: slide-in-blurred-top 0.9s cubic-bezier(0.23, 1, 0.32, 1) both;
+
+  &.scrolled {
+    padding: 0.5rem 1rem;
+    background: rgba(25, 25, 26, 0.6);
+    backdrop-filter: blur(200px);
+  }
+
+  .nav-container {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: clamp(1rem, 5vw, 4rem);
+    margin-inline: auto;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    background: black;
+    padding: 20px;
+    gap: 16px;
+
+    &.open {
+      display: flex;
+    }
+
+    a {
+      color: var(--white);
+      font-size: 1rem;
+      border-radius: 60px;
+      padding: 0.5rem;
+      &:hover {
+        background-color: black;
+      }
+    }
+    img {
+      width: 24px;
+    }
+  }
+  .mobile-menu {
+    display: flex;
+    gap: 16px;
+  }
+}
+
+.sideBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  gap: 1rem;
+  font-size: 2rem;
+  transform: translateX(100%);
+  transition:
+    transform 0.5s ease-in-out,
+    opacity 0.5s ease,
+    visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  &.active {
+    transform: translateX(0%);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &.scrolled {
+    padding: 0.5rem 1rem;
+    background: rgba(25, 25, 26, 0.6);
+    backdrop-filter: blur(10px) !important;
+  }
+
+  .exit {
+    margin: 0.4rem;
+    img {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 0.5rem;
+      border-radius: 50%;
+    }
+  }
+  li {
+    list-style: none;
+    width: 100%;
+  }
+  a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .HamBurger__icon {
+    display: none !important;
+  }
+  #Panto-nav .nav-links {
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+    padding: 0;
+    gap: 32px;
+  }
+}

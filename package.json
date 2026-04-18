@@ -1,0 +1,10 @@
+{
+  "dependencies": {},
+  "devDependencies": {
+    "vite": "^8.0.3"
+  },
+  "scripts": {
+    "dev": "vite --port 3100"
+  }
+}
+

@@ -1,0 +1,135 @@
+.Products {
+  margin-top: 10%;
+  padding: 2rem 1rem;
+  background: var(--notgray);
+  display: grid;
+  place-items: center;
+
+  & h3 {
+    text-align: center;
+  }
+
+  .view {
+    margin-top: 3em;
+    margin-bottom: 0.5em;
+  }
+}
+
+.Product_navbar {
+  margin-top: -5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 6px;
+  max-width: 348px;
+  height: 57px;
+  box-sizing: border-box;
+  background: var(--white);
+  /* Fallbacks to #EEE if display-p3 isn't supported */
+  background: color(display-p3 0.933 0.933 0.933);
+  border-radius: 44px;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 84px;
+  height: 45px;
+  border-radius: 2em;
+  text-decoration: none;
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-size: 1.125rem;
+  color: var(--black);
+  color: color(display-p3 0.118 0.118 0.118);
+  opacity: 0.8;
+  transition: all 0.2s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+
+}
+
+.nav-item.active {
+  background: #FFFFFF;
+  background: color(display-p3 1.000 1.000 1.000);
+  font-family: var(--font-body);
+  opacity: 1;
+}
+
+/* product card */
+
+.product_items {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product_card {
+  font-family: var(--font-card);
+  font-size: 16px;
+  border-radius: 1em;
+  overflow: hidden;
+  display: grid;
+  gap: 6px;
+
+  .product_image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .card_content {
+    background: var(--white);
+    padding: 1.25em;
+    display: grid;
+    gap: 6px;
+
+    & h6 {
+      font-weight: 300;
+      font-size: 1em;
+      /* 16px */
+      margin: 0;
+      color: #888;
+    }
+
+    & h5 {
+      font-size: 1em;
+      color: var(--blue);
+    }
+
+    & p {
+      font-size: 13px;
+      color: var(--blue);
+    }
+  }
+
+
+  .price_row {
+    justify-content: space-between;
+  }
+
+  .add_to_cart {
+    background: none;
+    border: none;
+    background-color: var(--blue);
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+
+    img {
+      width: 1.2em;
+      height: 1.2em;
+    }
+  }
+
+
+  /* <!-- Section 4: Experience & Materials--> */
+  /* <!-- Section 5: tesimonials--> */
+  /* <!-- section-6: footer --> */
+
+
+  /* use ai idiot  */
+}

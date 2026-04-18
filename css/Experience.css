@@ -1,0 +1,39 @@
+.Experience_section,
+.materials_section {
+    padding: 0rem 1rem;
+    display: grid;
+
+    & img {
+        object-fit: cover;
+        padding-top: 3rem;
+    }
+
+    & h4 {
+        color: var(--primary-color);
+        font-size: 1.125rem;
+        letter-spacing: 0.175em;
+        font-weight: 500;
+    }
+
+    & h3 {
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 3rem;
+    }
+
+    & p {
+        color: var(--black);
+        font-weight: 400;
+        font-size: 1.rem;
+        line-height: 1.85;
+        text-align: start;
+        opacity: 0.8;
+
+    }
+
+}
+
+
+/* Very serious materials for making furniture */
+
+/* Materials */

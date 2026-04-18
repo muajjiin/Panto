@@ -1,0 +1,88 @@
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-image: url("./assets/Hero_Desktop_Image.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.section-content {
+  padding-inline: clamp(0.5rem, 5vw, 4rem);
+  padding-top: clamp(2rem, 12rem - 10vw, 10rem);
+  display: grid;
+  place-items: center;
+  gap: clamp(1rem, 2.5vw, 1.5rem);
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+}
+
+.hero-title {
+  padding-top: 5rem;
+  font-size: clamp(2rem, 5vw, 5rem);
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+}
+
+.section-subtitle {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  max-width: clamp(360px, 50vw, 556px);
+  width: 100%;
+  opacity: 0.8;
+}
+
+.search-box {
+  max-width: 22rem;
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 60px;
+  padding: 0.5rem;
+  border: 1px solid white;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.search-box input {
+  background: transparent;
+  outline: none;
+  border: 0;
+  line-height: 150%;
+  flex: 1;
+  font-size: 1rem;
+  padding-left: 1.25rem;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.search-box button {
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 0;
+  background: var(--primary-color);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.search-box button img {
+  width: 18px;
+}
+
+@media (min-width: 1024px) {
+  .panto-bg {
+    max-height: 44px;
+  }
+}
