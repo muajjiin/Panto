@@ -39,7 +39,7 @@ This project is mobile first design so , It isn't yet responsive from on the pro
 
 ![Coming Soon](https://img.shields.io/badge/Status-Coming_Soon-orange?style=for-the-badge&logo=rocket)
 
-*backdrop-filter in css aren't working for multiple browswe according to desing* .
+*backdrop-filter in css aren't working for multiple browswe according to design* .
 
 ## 📜 License
 
