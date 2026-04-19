@@ -33,7 +33,7 @@ bun run  vite build
 
 ![Warning](https://img.shields.io/badge/WARNING-IMPORTANT-red?style=for-the-badge&logo=alert)
 
-This project is mobile first desing so ,It isn't yet responsive from the product section
+This project is mobile first design so , It isn't yet responsive from on the product section for larger screens
 
 ----
 
